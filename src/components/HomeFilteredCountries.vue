@@ -1,22 +1,19 @@
 <template>
-  <div class="row">
-    <country-column-component
-        v-for="country in countries"
-        :country="country"
-        :key="country.name"
-    />
-  </div>
+  <home-country-list :countries="countries" :loading="loading" />
 </template>
 
 <script>
 import axios from "axios";
-import CountryColumnComponent from "@/components/CountryColumnComponent";
+import HomeCountryList from "@/components/HomeCountryList";
 
 export default {
-  components: {CountryColumnComponent},
-  props: ['region'],
+  components: {HomeCountryList},
+  props: {
+    region: String
+  },
   data() {
     return {
+      loading: true,
       countries: [],
     }
   },

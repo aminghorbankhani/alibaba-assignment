@@ -1,6 +1,4 @@
 import VueRouter from "vue-router";
-import DetailComponent from "@/components/DetailComponent";
-import HomePage from "@/components/Home/HomePage";
 
 const router = new VueRouter({
     mode: 'history',
@@ -8,12 +6,12 @@ const router = new VueRouter({
         {
             path: '/',
             name: 'home',
-            component: HomePage
+            component: () => import('@/components/HomePage')
         },
         {
-            path: '/detail',
+            path: '/country/:code',
             name: 'detail',
-            component: DetailComponent
+            component: () => import('@/components/DetailPage')
         },
     ]
 });
