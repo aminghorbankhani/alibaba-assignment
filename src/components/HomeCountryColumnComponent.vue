@@ -1,7 +1,7 @@
 <template>
   <div class="col-lg-3 col-md-4">
     <router-link
-        :to="{ name: 'detail', params: { code: country.alpha3Code }}"
+        :to="{ name: 'Detail', params: { code: country.alpha3Code }}"
         class="card mb-4 border-0 shadow-sm text-decoration-none text-reset al-element al-text mx-5 mx-md-0"
     >
       <lazy-image-component

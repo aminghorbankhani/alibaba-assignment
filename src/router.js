@@ -5,12 +5,12 @@ const router = new VueRouter({
     routes: [
         {
             path: '/',
-            name: 'home',
+            name: 'Home',
             component: () => import('@/views/HomePage')
         },
         {
             path: '/country/:code',
-            name: 'detail',
+            name: 'Detail',
             component: () => import('@/views/DetailPage')
         },
     ]

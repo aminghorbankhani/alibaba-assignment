@@ -16,6 +16,7 @@ import {
   faCheck
 } from '@fortawesome/free-solid-svg-icons'
 import router from "./router";
+import GeneralMixins from "@/mixins/GeneralMixins";
 
 library.add(
     faMoon,
@@ -28,6 +29,7 @@ library.add(
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
+Vue.mixin(GeneralMixins)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 new Vue({

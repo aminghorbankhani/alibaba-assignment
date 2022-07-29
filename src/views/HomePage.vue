@@ -51,6 +51,7 @@ export default {
     }
   },
   created() {
+    this.setTitle('Home');
     this.getData();
   },
   watch: {

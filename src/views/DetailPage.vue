@@ -32,6 +32,7 @@ export default {
     }
   },
   created() {
+    this.setTitle('Detail');
     this.getData();
   },
   watch: {
