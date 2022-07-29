@@ -91,3 +91,9 @@ body.dark-mode .search-input::placeholder, body.dark-mode .search-icon {
     width: 100%;
     aspect-ratio: 4/3;
 }
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        font-size: 24px !important;
+    }
+}

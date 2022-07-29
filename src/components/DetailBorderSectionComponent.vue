@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="col-12 d-flex flex-column flex-md-row align-items-baseline">
-      <strong class="me-3 small flex-shrink-0 al-text">Border Countries:</strong>
+      <strong class="me-3 fw-semi-bold flex-shrink-0 al-text">Border Countries:</strong>
       <div class="d-flex flex-row flex-wrap">
         <detail-border-column-component
             v-for="borderCountry in countries"

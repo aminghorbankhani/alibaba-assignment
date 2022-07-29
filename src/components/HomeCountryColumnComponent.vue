@@ -12,7 +12,7 @@
       />
       <div class="card-body p-4">
         <h5 class="card-title text-truncate fw-bold">{{ country.name }}</h5>
-        <div class="my-3">
+        <div class="my-3 small">
           <info-label-component title="Population:" :text="country.population.toLocaleString()" />
           <info-label-component title="Region:" :text="country.region" />
           <info-label-component title="Capital:" :text="country.capital" />

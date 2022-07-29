@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-1 small al-text">
+  <div class="mb-1 al-text">
     <strong class="fw-semi-bold">{{ title }}</strong>
     <span class="ms-1">{{ text }}</span>
   </div>
