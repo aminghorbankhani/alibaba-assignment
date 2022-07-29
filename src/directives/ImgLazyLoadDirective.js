@@ -11,13 +11,12 @@ export default {
                     }, 100);
                 });
                 imageElement.addEventListener("error", () => console.log("error"));
-                imageElement.src = imageElement.dataset.url;
+                imageElement.src = imageElement.dataset.src;
             }
         }
         const createObserver = () => {
             const options = {
-                root: null,
-                threshold: 1
+                threshold: 0,
             };
             const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {

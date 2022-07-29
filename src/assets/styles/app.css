@@ -19,7 +19,6 @@
     font-style: normal;
 }
 
-
 html, body {
     height: 100%;
 }
@@ -83,7 +82,6 @@ body.dark-mode .search-input::placeholder, body.dark-mode .search-icon {
     background-color: transparent !important;
 }
 
-
 .w-200p {
     width: 200px;
 }
@@ -91,5 +89,5 @@ body.dark-mode .search-input::placeholder, body.dark-mode .search-icon {
 .flag {
     object-fit: cover;
     width: 100%;
-    aspect-ratio: 4/3
+    aspect-ratio: 4/3;
 }

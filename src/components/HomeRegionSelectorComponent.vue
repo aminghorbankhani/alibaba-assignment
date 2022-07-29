@@ -38,14 +38,20 @@ export default {
       filter: null,
     }
   },
+  mounted() {
+    if (this.$route.query.region && this.regions.includes(this.$route.query.region)) {
+      this.filter = this.$route.query.region;
+    }
+  },
   methods: {
     toggleRegionFilter(region) {
       if (region === this.filter) {
         this.filter = null;
+        this.$router.push('/')
       } else {
         this.filter = region;
+        this.$router.push({query: {region: this.filter}})
       }
-      this.$emit('onChange', this.filter);
     },
   }
 }

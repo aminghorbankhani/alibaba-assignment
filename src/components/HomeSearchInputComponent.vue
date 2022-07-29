@@ -6,6 +6,7 @@
         name="search"
         placeholder="Search for a country..."
         v-model="value"
+        autocomplete="off"
     >
   </div>
 </template>
