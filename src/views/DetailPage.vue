@@ -2,10 +2,13 @@
   <div class="py-5">
     <div class="container">
       <div class="mb-5">
-        <detail-back-button />
+        <button @click="$router.back()" class="btn al-element al-text px-3 shadow-sm border-0">
+          <font-awesome-icon icon="fa-solid fa-arrow-left-long" />
+          <span class="ms-2">Back</span>
+        </button>
       </div>
-      <the-loading v-if="loading" />
-      <detail-country-section
+      <loading-component v-if="loading" />
+      <detail-country-section-component
           v-else
           :country="country"
           :border-countries="borderCountries"
@@ -16,12 +19,11 @@
 
 <script>
 import axios from "axios";
-import DetailBackButton from "@/components/DetailBackButton";
-import DetailCountrySection from "@/components/DetailCountrySection";
-import TheLoading from "@/components/TheLoading";
+import DetailCountrySectionComponent from "@/components/DetailCountrySectionComponent";
+import LoadingComponent from "@/components/LoadingComponent";
 
 export default {
-  components: {TheLoading, DetailCountrySection, DetailBackButton},
+  components: {LoadingComponent, DetailCountrySectionComponent},
   data() {
     return {
       country: null,

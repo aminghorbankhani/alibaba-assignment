@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("../fonts/NunitoSans-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("../fonts/NunitoSans-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("../fonts/NunitoSans-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+.fw-semi-bold {
+    font-weight: 600 !important;
+}
+
+.al-element {
+    background-color: #FFFFFF !important;
+}
+
+body.dark-mode .al-element {
+    background-color: #2B3945 !important;
+}
+
+.al-text {
+    color: #111517 !important;
+}
+
+body.dark-mode .al-text {
+    color: #FFFFFF !important;
+}
+
+#app {
+    height: auto !important;
+    font-family: "Nunito Sans", sans-serif !important;
+    min-height: 100%;
+    background-color: #FAFAFA;
+}
+
+body.dark-mode #app {
+    background-color: #202C37;
+}
+
+.search-input {
+    padding-left: 50px !important;
+}
+
+.search-input::placeholder {
+    color: #858585;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0, -50%);
+    color: #858585
+}
+
+body.dark-mode .search-input::placeholder, body.dark-mode .search-icon {
+    color: #FFFFFF !important;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: transparent !important;
+}
+
+
+.w-200p {
+    width: 200px;
+}
+
+.flag {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 4/3
+}

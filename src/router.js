@@ -6,12 +6,12 @@ const router = new VueRouter({
         {
             path: '/',
             name: 'home',
-            component: () => import('@/components/HomePage')
+            component: () => import('@/views/HomePage')
         },
         {
             path: '/country/:code',
             name: 'detail',
-            component: () => import('@/components/DetailPage')
+            component: () => import('@/views/DetailPage')
         },
     ]
 });

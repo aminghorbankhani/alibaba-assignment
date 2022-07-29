@@ -1,13 +1,13 @@
 <template>
-  <home-country-list :countries="countries" :loading="loading" />
+  <home-country-list-component :countries="countries" :loading="loading" />
 </template>
 
 <script>
 import axios from "axios";
-import HomeCountryList from "@/components/HomeCountryList";
+import HomeCountryListComponent from "@/components/HomeCountryListComponent";
 
 export default {
-  components: {HomeCountryList},
+  components: {HomeCountryListComponent},
   props: {
     text: String
   },
