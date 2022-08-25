@@ -4,7 +4,7 @@ Small and simple SPA that gets information of countries from [REST Countries API
 
 ## Demo
 
-To overview my work, visit this **[link](https://wikicountry-vue2.vercel.app)**.
+To overview my work, visit this **[Demo](https://wikicountry-vue2.vercel.app)** on Vercel.
 
 ## Technologies
 * Bootstrap 5
