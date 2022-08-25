@@ -16,8 +16,8 @@ To overview my work visit this **[Demo](https://wikicountry-vue2.vercel.app)** o
 ## Implementations
 
 * Display all countries from the API on the homepage
-* Fuzzy search in countries through an input field using the Fuse library
-* Filter countries by their regions through a dropdown component
+* Search in countries through an input field using the API
+* Filter countries by their regions using the API
 * Display extended information about each country on detail page
 * Implement dark mode and light mode without using any 3rd party libraries 
 * Lazy load images to improve the page loading speed
