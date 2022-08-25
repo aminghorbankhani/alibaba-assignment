@@ -6,14 +6,14 @@ Small and simple SPA that gets information of countries from [REST Countries API
 
 To overview my work, visit this **[link](https://wikicountry-vue2.vercel.app)**.
 
-## Technologis
+## Technologies
 * Bootstrap 5
 * Vue.js 2
 * Vue Router
 * Axios
 * Fuse.js
 
-## Implementions
+## Implementations
 
 * Display all countries from the API on the homepage
 * Fuzzy search in countries through an input field using the Fuse library
