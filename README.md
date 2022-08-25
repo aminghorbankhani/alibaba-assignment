@@ -1,26 +1,23 @@
-# Alibaba Assignment
+# WikiCountry
 
-Designed preview for the [REST Countries API](https://restcountries.com/#api-endpoints-v2-all) with color theme switcher.
+Small and simple SPA that gets information of countries from [REST Countries API](https://restcountries.com/#api-endpoints-v2-all) and displays them to the users.
 
 ## Demo
 
-To overview my work, open this **[link](https://aminghorbankhani.github.io/alibaba-assignment-demo)**.
+To overview my work, visit this **[link](https://wikicountry-vue2.vercel.app)**.
 
-## What I have used
+## Technologis
 * Bootstrap 5
 * Vue.js 2
 * Vue Router
 * Axios
 * Fuse.js
 
-## What I have done
+## Implementions
 
-* Design HomePage and DetailPage as they were requested
-* Implement Dark Mode feature without using any packages with ability to remember user chioce (using localStorage)
-* Call REST countries API to show all countries on the HomePage and detail of each country on the DetailPage
-* Add client-side routing to provide navigation functionality without any refresh
-* Implement Region filter to filter countries by their regions and sync the filter with url query param
-* Implement fuzzy search for both filtered and non-filtered countries
-* Provide lazy loading feature for country images
-* Lazy loading scripts for each page
-
+* Display all countries from the API on the homepage
+* Fuzzy search in countries through an input field using the Fuse library
+* Filter countries by their regions through a dropdown component
+* Display extended information about each country on detail page
+* Implement dark mode and light mode without using any 3rd party libraries 
+* Lazy load images to improve the page loading speed
